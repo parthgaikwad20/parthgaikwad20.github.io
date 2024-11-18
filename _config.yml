@@ -13,7 +13,7 @@ crashworthiness performance evaluation by analysis"
 title_separator          : "-"
 name                     : &name "Parth Gaikwad"
 description              : &description "personal description"
-url                      : https://parthgaikwad.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : https://parthgaikwad20.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "parthgaikwad20/parthgaikwad.github.io "
 
@@ -28,7 +28,7 @@ author:
   bio              : "Studying Master's in Infotech"
   location         : "Stuttgart, Germany"
   employer         : "Universität Stuttgart"
-  uri              : parthgaikwad.github.io
+  uri              : # URL
   email            : "parthgaikwad253@gmail.com"
 
   # Academic websites
