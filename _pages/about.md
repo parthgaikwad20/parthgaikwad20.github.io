@@ -183,6 +183,9 @@ The ISO Validation Metrics, including Corridor, Phase, Magnitude, and Slope scor
 2.Displacement-Domain Approach: The GPR effectively modeled non-linear dynamics and improved accuracy for unseen configurations.
 
 
+![Validation Metric](_pages\images\Validation_metric.png "ISO Validation Metric")
+
+
 
 
 
