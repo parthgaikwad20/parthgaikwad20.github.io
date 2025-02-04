@@ -178,6 +178,7 @@ Experiments: The Proof in the Pudding
 The ISO Validation Metrics, including Corridor, Phase, Magnitude, and Slope scores, were used to evaluate the performance of the proposed methods.
 
 *Key Results: The Breakthrough*
+
 1.Time-Domain Approach: The Multi-Fidelity TCN significantly improved predictions compared to CAE alone.
 
 2.Displacement-Domain Approach: The GPR effectively modeled non-linear dynamics and improved accuracy for unseen configurations.
