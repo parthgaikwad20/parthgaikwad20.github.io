@@ -15,7 +15,7 @@ Introduction: The Intersection of Safety and Innovation
 ======
 Vehicle crashworthiness is a critical aspect of automotive engineering, focusing on the structural ability of a vehicle to manage crash energy and protect passengers during an impact. Traditional methods of evaluating crashworthiness rely heavily on physical crash tests, which are both expensive and time-consuming. With the advent of advanced simulation tools, Computer-Aided Engineering (CAE) has become a cornerstone in the design and evaluation of vehicle safety. However, discrepancies between CAE model predictions and actual test results pose significant challenges. This is where Machine Learning (ML) steps in, offering a promising solution to enhance the accuracy of CAE models by fusing them with real-world crash test data.
 
-![Vehicle Crashworthiness](https://parthgaikwad20.github.io/images/vehicle_crashworthiness.png)
+![Vehicle Crashworthiness](_pages\images\Vehicle Crashworthiness.png " Machine learning enabled fusion of CAE data and test data for vehicle crashworthiness performance evaluation by analysis")
 Figure 1: Vehicle crashworthiness design: a physical test, and b CAE model (Source: Research Paper)
 
 
