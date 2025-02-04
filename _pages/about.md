@@ -109,6 +109,10 @@ Fine-Tuning with Transfer Learning: The low-fidelity TCN is then fine-tuned into
 
 9.Training Epochs: 10,000.
 
+![TCN Architecture](_pages\images\TCN_Architecture.png "The workflow of ML training and prediction for data fusion")
+
+Figure 2: TCN Architecture (Source: Research Paper)
+
 
 
 *Displacement-Domain Approach: The Precision of Gaussian Process Regression (GPR)*
@@ -138,7 +142,9 @@ The displacement-domain approach models the vehicle crash as a spring-mass syste
 
 6.Training Repeats: 10.
 
+![Spring Mass Model](_pages\images\Spring_mass_model.png "Spring–mass model for vehicle crash test")
 
+Figure 3: Spring-Mass Model for Vehicle Crash Test (Source: Research Paper)
 
 
 Applications: Beyond the Automotive Industry
@@ -207,7 +213,7 @@ The Multi-Fidelity TCN demonstrated substantial improvements in prediction accur
 |         | 0-60          | 0.476             | 0.878             |
 
 
-
+![Time Domain Approach](_pages\images\Time_Domain_Results.png "Time Domain Approach Results")
 
 *Displacement-Domain Approach: The Precision of Probabilistic Predictions*
 -----
@@ -229,7 +235,7 @@ The GPR captured unmodeled physics, leading to enhanced predictions. Additionall
 | 9        | 0-40            | 0.665           | 0.731           |
 | 9        | 0-60            | 0.527           | 0.766           |
 
-
+![Displacement Domain Approach](_pages\images\Displacement_Domain_Results.png "Displacement Domain Approach Results")
 
 
 Pros and Cons: The Double-Edged Sword
