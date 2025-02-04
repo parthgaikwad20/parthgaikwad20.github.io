@@ -215,6 +215,8 @@ The Multi-Fidelity TCN demonstrated substantial improvements in prediction accur
 
 ![Time Domain Approach](_pages\images\Time_Domain_Results.png "Time Domain Approach Results")
 
+Figure 4: Time-Domain Approach Results (Source: Research Paper)
+
 *Displacement-Domain Approach: The Precision of Probabilistic Predictions*
 -----
 The GPR captured unmodeled physics, leading to enhanced predictions. Additionally, the model quantified prediction uncertainties using Monte Carlo simulations, providing a probabilistic assessment of crashworthiness.
@@ -236,6 +238,8 @@ The GPR captured unmodeled physics, leading to enhanced predictions. Additionall
 | 9        | 0-60            | 0.527           | 0.766           |
 
 ![Displacement Domain Approach](_pages\images\Displacement_Domain_Results.png "Displacement Domain Approach Results")
+
+Figure 5: Displacement-Domain Approach Results (Source: Research Paper)
 
 
 Pros and Cons: The Double-Edged Sword
