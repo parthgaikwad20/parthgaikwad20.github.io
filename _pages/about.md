@@ -18,7 +18,7 @@ Vehicle crashworthiness is a critical aspect of automotive engineering, focusing
 
 ![Vehicle Crashworthiness](_pages\images\Vehicle_Crashworthiness.png "Machine learning enabled fusion of CAE data and test data for vehicle crashworthiness performance evaluation by analysis")
 
-Figure 1: Vehicle crashworthiness design: a physical test, and b CAE model (Source:"https://link.springer.com/article/10.1007/s00158-023-03553-5")
+Figure 1: Vehicle crashworthiness design: Physical test and CAE model (Source:https://link.springer.com/article/10.1007/s00158-023-03553-5)
 
 
 
@@ -32,19 +32,19 @@ The importance of addressing the gap between CAE predictions and real-world cras
 
 Why is this Problem Important?
 ======
-**1.Occupant Safety:** Accurate crashworthiness predictions are crucial for ensuring the safety of vehicle occupants.
+**1. Occupant Safety:** Accurate crashworthiness predictions are crucial for ensuring the safety of vehicle occupants.
 
-**2.Cost Reduction:** Physical crash tests are expensive and resource-intensive. Reducing the number of required tests can significantly lower development costs.
+**2. Cost Reduction:** Physical crash tests are expensive and resource-intensive. Reducing the number of required tests can significantly lower development costs.
 
-**3.Regulatory Compliance:** Meeting safety regulations efficiently is essential for bringing new vehicles to market quickly.
-
-
+**3. Regulatory Compliance:** Meeting safety regulations efficiently is essential for bringing new vehicles to market quickly.
 
 
-Challenges: The Ro*adblocks* to Accuracy*
+
+
+Challenges: The Roadblocks to Accuracy*
 ======
 **Economic Barriers:**
-Physical crash tests are expensive and res*ource-intensive, making them a significant barrier in the*development process.
+Physical crash tests are expensive and res*ource-intensive, making them a significant barrier in the development process.
 
 **Data Availability:**
 Limited real-world crash test data is available for training machine learning models, which can affect the accuracy and reliability of these models.
@@ -65,14 +65,14 @@ To address these challenges, we map the problem to a machine learning framework.
 
 **Inputs and Outputs: The Data Dynamics**
 
-1.Inputs: Crash speed, vehicle front weight, vehicle rear weight.
-2.Outputs: Deceleration prediction over time or displacement.
+1. Inputs: Crash speed, vehicle front weight, vehicle rear weight.
+2. Outputs: Deceleration prediction over time or displacement.
 
 
 **Loss Function: The Precision Metric**
 
-1.Objective: Minimize the discrepancy between CAE predictions and test data.
-2.Metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE).
+1. Objective: Minimize the discrepancy between CAE predictions and test data.
+2. Metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE).
 
 
 
@@ -122,7 +122,7 @@ Fine-Tuning with Transfer Learning: The low-fidelity TCN is then fine-tuned into
 
 ![TCN Architecture](_pages\images\TCN_Architecture.png "The workflow of ML training and prediction for data fusion")
 
-Figure 2: TCN Architecture (Source:"https://link.springer.com/article/10.1007/s00158-023-03553-5")
+Figure 2: TCN Architecture (Source:https://link.springer.com/article/10.1007/s00158-023-03553-5)
 
 
 
@@ -132,38 +132,38 @@ The displacement-domain approach models the vehicle crash as a spring-mass syste
 
 **The steps include:**
 
-1.Modeling the Crash: The vehicle crash is modeled as a spring-mass system.
+1. Modeling the Crash: The vehicle crash is modeled as a spring-mass system.
 
-2.GPR for Bias Correction: A GPR model is trained to capture the unmodeled physics of the nonlinear spring constant.
+2. GPR for Bias Correction: A GPR model is trained to capture the unmodeled physics of the nonlinear spring constant.
 
-3.Iterative Integration: The GPR model is integrated with the CAE predictions iteratively to improve accuracy.
+3. Iterative Integration: The GPR model is integrated with the CAE predictions iteratively to improve accuracy.
 
 
 
 **Key Parameters: The Formula for Success**
 -----
 
-1.Input Size: 1500 (length of training data).
+1. Input Size: 1500 (length of training data).
 
-2.Output Size: 1 (model bias).
+2. Output Size: 1 (model bias).
 
-3.Kernel: Combination of ConstantKernel and MaternKernel.
+3. Kernel: Combination of ConstantKernel and MaternKernel.
 
-4.Optimizer: L-BFGS-B algorithm.
+4. Optimizer: L-BFGS-B algorithm.
 
-5.Alpha: 1×10^−5.
+5. Alpha: 1×10^−5.
 
-6.Training Repeats: 10.
+6. Training Repeats: 10.
 
-7.Loss Function: Mean Squared Error (MSE).
+7. Loss Function: Mean Squared Error (MSE).
 
-8.Uncertainty Quantification: Monte Carlo Simulations.
+8. Uncertainty Quantification: Monte Carlo Simulations.
 
-9.Prediction Interval: 95% Confidence Interval.
+9. Prediction Interval: 95% Confidence Interval.
 
 ![Spring Mass Model](_pages\images\Spring_mass_model.png "Spring–mass model for vehicle crash test")
 
-Figure 3: Spring-Mass Model for Vehicle Crash Test (Source:"https://link.springer.com/article/10.1007/s00158-023-03553-5")
+Figure 3: Spring-Mass Model for Vehicle Crash Test (Source:https://link.springer.com/article/10.1007/s00158-023-03553-5)
 
 
 Applications: Beyond the Automotive Industry
@@ -187,9 +187,9 @@ Experiments: The Proof in the Pudding
 
 **Experimental Data: The Foundation**
 
-1.CAE Data: 1009 simulation datasets generated using Latin hypercube sampling.
+1. CAE Data: 1009 simulation datasets generated using Latin hypercube sampling.
 
-2.Crash Test Data: 11 real-world datasets, limited due to the high costs of physical tests.
+2. Crash Test Data: 11 real-world datasets, limited due to the high costs of physical tests.
 
 
 
@@ -199,14 +199,14 @@ The ISO Validation Metrics, including Corridor, Phase, Magnitude, and Slope scor
 
 **Key Results: The Breakthrough**
 
-1.Time-Domain Approach: The Multi-Fidelity TCN significantly improved predictions compared to CAE alone.
+1. Time-Domain Approach: The Multi-Fidelity TCN significantly improved predictions compared to CAE alone.
 
-2.Displacement-Domain Approach: The GPR effectively modeled non-linear dynamics and improved accuracy for unseen configurations.
+2. Displacement-Domain Approach: The GPR effectively modeled non-linear dynamics and improved accuracy for unseen configurations.
 
 
 ![Validation Metric](_pages\images\Validation_metric.png "ISO Validation Metric")
 
-Figure 4: ISO Validation Metric (Source:"https://link.springer.com/article/10.1007/s00158-023-03553-5")
+Figure 4: ISO Validation Metric (Source:https://link.springer.com/article/10.1007/s00158-023-03553-5)
 
 
 
@@ -241,7 +241,7 @@ The Multi-Fidelity TCN demonstrated substantial improvements in prediction accur
 
 ![Time Domain Approach](_pages\images\Time_Domain_Results.png "Time Domain Approach Results")
 
-Figure 5: Time-Domain Approach Results (Source:"https://link.springer.com/article/10.1007/s00158-023-03553-5")
+Figure 5: Time-Domain Approach Results (Source:https://link.springer.com/article/10.1007/s00158-023-03553-5)
 
 
 
@@ -267,7 +267,7 @@ The GPR captured unmodeled physics, leading to enhanced predictions. Additionall
 
 ![Displacement Domain Approach](_pages\images\Displacement_Domain_Results.png "Displacement Domain Approach Results")
 
-Figure 6: Displacement-Domain Approach Results (Source:"https://link.springer.com/article/10.1007/s00158-023-03553-5")
+Figure 6: Displacement-Domain Approach Results (Source:https://link.springer.com/article/10.1007/s00158-023-03553-5)
 
 
 Comparison of the Two Methods
@@ -278,15 +278,15 @@ Comparison of the Two Methods
 
 ***Time-Domain Approach (TCN):***
 
-1.Strengths: Efficient in handling sequential data, captures long-range dependencies, and is computationally efficient.
+1. Strengths: Efficient in handling sequential data, captures long-range dependencies, and is computationally efficient.
 
-2.Implications: Suitable for scenarios where the temporal dynamics of the crash are crucial. It provides deterministic predictions and is less sensitive to the configuration of training data.
+2. Implications: Suitable for scenarios where the temporal dynamics of the crash are crucial. It provides deterministic predictions and is less sensitive to the configuration of training data.
 
 ***Displacement-Domain Approach (GPR):***
 
-1.Strengths: Provides probabilistic predictions with uncertainty quantification, captures complex non-linear relationships, and is more robust to the configuration of training data.
+1. Strengths: Provides probabilistic predictions with uncertainty quantification, captures complex non-linear relationships, and is more robust to the configuration of training data.
 
-2.Implications: Ideal for scenarios where uncertainty quantification is important. It is more flexible and can handle cases where the training data does not closely match the prediction scenarios.
+2. Implications: Ideal for scenarios where uncertainty quantification is important. It is more flexible and can handle cases where the training data does not closely match the prediction scenarios.
 
 
 
@@ -306,22 +306,22 @@ Pros and Cons: The Double-Edged Sword
 
 ***Pros: The Bright Side***
 -----
-  1.Cost Reduction: Minimizes the need for physical crash tests, reducing development costs.
+  1. Cost Reduction: Minimizes the need for physical crash tests, reducing development costs.
 
-  2.Improved Accuracy: Enhances prediction accuracy for unseen scenarios, ensuring better safety outcomes.
+  2. Improved Accuracy: Enhances prediction accuracy for unseen scenarios, ensuring better safety outcomes.
   
-  3.Flexibility: Adaptable across different configurations and speeds, offering a versatile solution.
+  3. Flexibility: Adaptable across different configurations and speeds, offering a versatile solution.
   
-  4.Probabilistic Predictions: The displacement-domain approach provides uncertainty quantification, aiding risk-informed decision-making.
+  4. Probabilistic Predictions: The displacement-domain approach provides uncertainty quantification, aiding risk-informed decision-making.
 
 
 ***Cons: The Challenges Ahead***
 -----
-  1.Computational Resources: Requires significant computational resources for model training.
+  1. Computational Resources: Requires significant computational resources for model training.
   
-  2.Data Limitations: Limited availability of high-fidelity crash test data can affect model performance.
+  2. Data Limitations: Limited availability of high-fidelity crash test data can affect model performance.
   
-  3.Complexity: The methods require expertise in both machine learning and vehicle dynamics.
+  3. Complexity: The methods require expertise in both machine learning and vehicle dynamics.
 
 
 
@@ -335,11 +335,11 @@ Machine Learning models effectively bridge the gap between CAE predictions and t
 
 Future Work: The Road Ahead
 -----
-  1.Dataset Expansion: Incorporate more diverse crash scenarios to improve model robustness.
+  1. Dataset Expansion: Incorporate more diverse crash scenarios to improve model robustness.
   
-  2.Hybrid Models: Explore hybrid ML models combining the strengths of different approaches.
+  2. Hybrid Models: Explore hybrid ML models combining the strengths of different approaches.
   
-  3.Real-Time Applications: Develop models capable of real-time predictions during crash simulations.
+  3. Real-Time Applications: Develop models capable of real-time predictions during crash simulations.
 
 Thank you for reading! If you have any questions or feedback, feel free to reach out.
 
@@ -347,9 +347,9 @@ Thank you for reading! If you have any questions or feedback, feel free to reach
 References
 ======
 
-1.Zeng, J., Li, G., Gao, Z., Li, Y., Sundararajan, S., Barbat, S., & Hu, Z. (2023). Machine learning enabled fusion of CAE data and test data for vehicle crashworthiness performance evaluation by analysis. Structural and Multidisciplinary Optimization, 66(1), 96. https://doi.org/10.1007/s00158-023-03553-5
+1. Zeng, J., Li, G., Gao, Z., Li, Y., Sundararajan, S., Barbat, S., & Hu, Z. (2023). Machine learning enabled fusion of CAE data and test data for vehicle crashworthiness performance evaluation by analysis. Structural and Multidisciplinary Optimization, 66(1), 96. https://doi.org/10.1007/s00158-023-03553-5
 
-2.Lea C, Vidal R, Reiter A, Hager GD (2016) Temporal convolutional 
+2. Lea C, Vidal R, Reiter A, Hager GD (2016) Temporal convolutional 
 networks: a unified approach to action segmentation. In: Com
 puter vision—ECCV 2016 workshops, proceedings, Part III 14, 
 2016, Amsterdam, The Netherlands, 8–10 and 15–16 October 2016. Springer, pp 47–54.
