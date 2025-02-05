@@ -348,6 +348,5 @@ References
 2.Lea C, Vidal R, Reiter A, Hager GD (2016) Temporal convolutional 
 networks: a unified approach to action segmentation. In: Com
 puter vision—ECCV 2016 workshops, proceedings, Part III 14, 
-2016, Amsterdam, The Netherlands, 8–10 and 15–16 October 
-2016. Springer, pp 47–54.
+2016, Amsterdam, The Netherlands, 8–10 and 15–16 October 2016. Springer, pp 47–54.
 
