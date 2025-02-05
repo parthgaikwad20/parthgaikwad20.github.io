@@ -122,7 +122,7 @@ Fine-Tuning with Transfer Learning: The low-fidelity TCN is then fine-tuned into
 
 ![TCN Architecture](_pages\images\TCN_Architecture.png "The workflow of ML training and prediction for data fusion")
 
-Figure 2: TCN Architecture (Source:https://link.springer.com/article/10.1007/s00158-023-03553-5)
+<center>Figure 2: TCN Architecture</center> (Source:https://link.springer.com/article/10.1007/s00158-023-03553-5)
 
 
 
