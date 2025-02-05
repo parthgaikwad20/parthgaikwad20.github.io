@@ -18,7 +18,7 @@ Vehicle crashworthiness is a critical aspect of automotive engineering, focusing
 
 ![Vehicle Crashworthiness](_pages\images\Vehicle_Crashworthiness.png "Machine learning enabled fusion of CAE data and test data for vehicle crashworthiness performance evaluation by analysis")
 
-Figure 1: Vehicle crashworthiness design: Physical test and CAE model (Source:https://link.springer.com/article/10.1007/s00158-023-03553-5)
+<center>Figure 1: Vehicle crashworthiness design: Physical test and CAE model </center> (Source:https://link.springer.com/article/10.1007/s00158-023-03553-5)
 
 
 
@@ -163,7 +163,7 @@ The displacement-domain approach models the vehicle crash as a spring-mass syste
 
 ![Spring Mass Model](_pages\images\Spring_mass_model.png "Spring–mass model for vehicle crash test")
 
-Figure 3: Spring-Mass Model for Vehicle Crash Test (Source:https://link.springer.com/article/10.1007/s00158-023-03553-5)
+<center>Figure 3: Spring-Mass Model for Vehicle Crash Test</center> (Source:https://link.springer.com/article/10.1007/s00158-023-03553-5)
 
 
 Applications: Beyond the Automotive Industry
@@ -206,7 +206,7 @@ The ISO Validation Metrics, including Corridor, Phase, Magnitude, and Slope scor
 
 ![Validation Metric](_pages\images\Validation_metric.png "ISO Validation Metric")
 
-Figure 4: ISO Validation Metric (Source:https://link.springer.com/article/10.1007/s00158-023-03553-5)
+<center>Figure 4: ISO Validation Metric</center>(Source:https://link.springer.com/article/10.1007/s00158-023-03553-5)
 
 
 
@@ -241,7 +241,7 @@ The Multi-Fidelity TCN demonstrated substantial improvements in prediction accur
 
 ![Time Domain Approach](_pages\images\Time_Domain_Results.png "Time Domain Approach Results")
 
-Figure 5: Time-Domain Approach Results (Source:https://link.springer.com/article/10.1007/s00158-023-03553-5)
+<center>Figure 5: Time-Domain Approach Results </center>(Source:https://link.springer.com/article/10.1007/s00158-023-03553-5)
 
 
 
@@ -267,7 +267,7 @@ The GPR captured unmodeled physics, leading to enhanced predictions. Additionall
 
 ![Displacement Domain Approach](_pages\images\Displacement_Domain_Results.png "Displacement Domain Approach Results")
 
-Figure 6: Displacement-Domain Approach Results (Source:https://link.springer.com/article/10.1007/s00158-023-03553-5)
+<center>Figure 6: Displacement-Domain Approach Results</center> (Source:https://link.springer.com/article/10.1007/s00158-023-03553-5)
 
 
 Comparison of the Two Methods
