@@ -17,7 +17,7 @@ Vehicle crashworthiness is a critical aspect of automotive engineering, focusing
 
 ![Vehicle Crashworthiness](_pages\images\Vehicle_Crashworthiness.png "Machine learning enabled fusion of CAE data and test data for vehicle crashworthiness performance evaluation by analysis")
 
-Figure 1: Vehicle crashworthiness design: a physical test, and b CAE model (Source: Research Paper)
+Figure 1: Vehicle crashworthiness design: a physical test, and b CAE model (Source:"https://link.springer.com/article/10.1007/s00158-023-03553-5")
 
 
 
@@ -81,7 +81,9 @@ Methodology: The Dual Approach
 
 *Time-Domain Approach: The Power of Temporal Convolutional Networks (TCN)*
 -----
-The time-domain approach leverages Temporal Convolutional Networks (TCN) to model the deceleration response over time. The process involves:
+The time-domain approach leverages Temporal Convolutional Networks (TCN) to model the deceleration response over time. TCN is a type of neural network that uses convolutional layers to process sequential data. It is particularly effective for time-series data due to its ability to capture long-range dependencies and its efficiency in training.
+
+The process involves:
 
 Training a Low-Fidelity TCN: Using a large volume of CAE simulation data, a low-fidelity TCN model is trained.
 
@@ -109,15 +111,25 @@ Fine-Tuning with Transfer Learning: The low-fidelity TCN is then fine-tuned into
 
 9.Training Epochs: 10,000.
 
+10.Batch Size: 32.
+
+11.Loss Function: Mean Squared Error (MSE).
+
+12.Activation Function: ReLU.
+
+13.Normalization: Batch Normalization.
+
 ![TCN Architecture](_pages\images\TCN_Architecture.png "The workflow of ML training and prediction for data fusion")
 
-Figure 2: TCN Architecture (Source: Research Paper)
+Figure 2: TCN Architecture (Source:"https://link.springer.com/article/10.1007/s00158-023-03553-5")
 
 
 
 *Displacement-Domain Approach: The Precision of Gaussian Process Regression (GPR)*
 -----
-The displacement-domain approach models the vehicle crash as a spring-mass system and uses Gaussian Process Regression (GPR) to correct the nonlinear dynamics. The steps include:
+The displacement-domain approach models the vehicle crash as a spring-mass system and uses Gaussian Process Regression (GPR) to correct the nonlinear dynamics. GPR is a probabilistic, non-parametric model that can capture complex relationships in data and provide uncertainty estimates for predictions.
+
+The steps include:
 
 1.Modeling the Crash: The vehicle crash is modeled as a spring-mass system.
 
@@ -142,9 +154,15 @@ The displacement-domain approach models the vehicle crash as a spring-mass syste
 
 6.Training Repeats: 10.
 
+7.Loss Function: Mean Squared Error (MSE).
+
+8.Uncertainty Quantification: Monte Carlo Simulations.
+
+9.Prediction Interval: 95% Confidence Interval.
+
 ![Spring Mass Model](_pages\images\Spring_mass_model.png "Spring–mass model for vehicle crash test")
 
-Figure 3: Spring-Mass Model for Vehicle Crash Test (Source: Research Paper)
+Figure 3: Spring-Mass Model for Vehicle Crash Test (Source:"https://link.springer.com/article/10.1007/s00158-023-03553-5")
 
 
 Applications: Beyond the Automotive Industry
@@ -186,6 +204,8 @@ The ISO Validation Metrics, including Corridor, Phase, Magnitude, and Slope scor
 
 ![Validation Metric](_pages\images\Validation_metric.png "ISO Validation Metric")
 
+Figure 4: ISO Validation Metric (Source:"https://link.springer.com/article/10.1007/s00158-023-03553-5")
+
 
 
 
@@ -219,7 +239,7 @@ The Multi-Fidelity TCN demonstrated substantial improvements in prediction accur
 
 ![Time Domain Approach](_pages\images\Time_Domain_Results.png "Time Domain Approach Results")
 
-Figure 4: Time-Domain Approach Results (Source: Research Paper)
+Figure 5: Time-Domain Approach Results (Source:"https://link.springer.com/article/10.1007/s00158-023-03553-5")
 
 *Displacement-Domain Approach: The Precision of Probabilistic Predictions*
 -----
@@ -243,7 +263,38 @@ The GPR captured unmodeled physics, leading to enhanced predictions. Additionall
 
 ![Displacement Domain Approach](_pages\images\Displacement_Domain_Results.png "Displacement Domain Approach Results")
 
-Figure 5: Displacement-Domain Approach Results (Source: Research Paper)
+Figure 6: Displacement-Domain Approach Results (Source:"https://link.springer.com/article/10.1007/s00158-023-03553-5")
+
+
+Comparison of the Two Methods
+======
+
+Time-Domain vs. Displacement-Domain
+----
+
+*Time-Domain Approach (TCN):*
+
+1.*Strengths: Efficient in handling sequential data, captures long-range dependencies, and is computationally efficient.
+
+2.Implications: Suitable for scenarios where the temporal dynamics of the crash are crucial. It provides deterministic predictions and is less sensitive to the configuration of training data.
+
+*Displacement-Domain Approach (GPR):*
+
+1.Strengths: Provides probabilistic predictions with uncertainty quantification, captures complex non-linear relationships, and is more robust to the configuration of training data.
+
+2.Implications: Ideal for scenarios where uncertainty quantification is important. It is more flexible and can handle cases where the training data does not closely match the prediction scenarios.
+
+
+
+Which Method is Better?
+======
+
+The choice between the time-domain and displacement-domain approaches depends on the specific requirements of the application:
+
+*Time-Domain Approach:* Preferred when the temporal dynamics of the crash are critical and the training data closely matches the prediction scenarios.
+
+*Displacement-Domain Approach:* Preferred when uncertainty quantification is important and the training data may not closely match the prediction scenarios.
+
 
 
 Pros and Cons: The Double-Edged Sword
@@ -289,4 +340,14 @@ Future Work: The Road Ahead
 Thank you for reading! If you have any questions or feedback, feel free to reach out.
 
 
+References
+======
+
+1.Zeng, J., Li, G., Gao, Z., Li, Y., Sundararajan, S., Barbat, S., & Hu, Z. (2023). Machine learning enabled fusion of CAE data and test data for vehicle crashworthiness performance evaluation by analysis. Structural and Multidisciplinary Optimization, 66(1), 96. https://doi.org/10.1007/s00158-023-03553-5
+
+2.Lea C, Vidal R, Reiter A, Hager GD (2016) Temporal convolutional 
+networks: a unified approach to action segmentation. In: Com
+puter vision—ECCV 2016 workshops, proceedings, Part III 14, 
+2016, Amsterdam, The Netherlands, 8–10 and 15–16 October 
+2016. Springer, pp 47–54.
 
