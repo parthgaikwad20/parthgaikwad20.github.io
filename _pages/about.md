@@ -94,31 +94,31 @@ Fine-Tuning with Transfer Learning: The low-fidelity TCN is then fine-tuned into
 **Key Parameters: The Blueprint**
 -----
 
-1.Input Size: 4 (time, initial speed, vehicle front weight, vehicle rear weight).
+1. Input Size: 4 (time, initial speed, vehicle front weight, vehicle rear weight).
 
-2.Output Size: 1 (deceleration at each time step).
+2. Output Size: 1 (deceleration at each time step).
 
-3.Number of Channels: 600.
+3. Number of Channels: 600.
 
-4.Dilation Factor: 2^i, where i is the layer number.
+4. Dilation Factor: 2^i, where i is the layer number.
 
-5.Filter Size: 20.
+5. Filter Size: 20.
 
-6.Dropout Rate: 0.05.
+6. Dropout Rate: 0.05.
 
-7.Optimizer: Adam.
+7. Optimizer: Adam.
 
-8.Learning Rate: 3×10^−4.
+8. Learning Rate: 3×10^−4.
 
-9.Training Epochs: 10,000.
+9. Training Epochs: 10,000.
 
-10.Batch Size: 32.
+10. Batch Size: 32.
 
-11.Loss Function: Mean Squared Error (MSE).
+11. Loss Function: Mean Squared Error (MSE).
 
-12.Activation Function: ReLU.
+12. Activation Function: ReLU.
 
-13.Normalization: Batch Normalization.
+13. Normalization: Batch Normalization.
 
 ![TCN Architecture](_pages\images\TCN_Architecture.png "The workflow of ML training and prediction for data fusion")
 
