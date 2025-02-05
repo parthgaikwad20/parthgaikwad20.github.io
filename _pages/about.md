@@ -49,7 +49,7 @@ Physical crash tests are expensive and res*ource-intensive, making them a signif
 **Data Availability:**
 Limited real-world crash test data is available for training machine learning models, which can affect the accuracy and reliability of these models.
 
-**Accurac*y:**
+**Accuracy:**
 Discrepancies between CAE simulation outputs and real-world test results can lead to inaccurate predictions, potentially compromising safety.
 
 **Complexity:**
