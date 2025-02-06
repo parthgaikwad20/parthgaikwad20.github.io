@@ -23,6 +23,9 @@ Vehicle crashworthiness is a critical aspect of automotive engineering, focusing
 
 
 
+
+
+
 Motivation: Why This Matters
 ======
 The importance of addressing the gap between CAE predictions and real-world crash test results cannot be overstated. Ensuring occupant safety while reducing development costs is a key driver behind this research. Machine Learning models can handle the nonlinearity and missing physics in CAE models, thereby minimizing the reliance on costly physical crash tests. This not only accelerates the certification process but also enhances the robustness of vehicle safety designs.
