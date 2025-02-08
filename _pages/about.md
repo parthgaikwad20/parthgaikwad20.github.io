@@ -14,7 +14,7 @@ p {
 
 Introduction: The Intersection of Safety and Innovation
 ======
-Vehicle crashworthiness is a critical aspect of automotive engineering, focusing on the structural ability of a vehicle to manage crash energy and protect passengers during an impact. Traditional methods of evaluating crashworthiness rely heavily on physical crash tests, which are both expensive and time-consuming. With the advent of advanced simulation tools, Computer-Aided Engineering (CAE) has become a cornerstone in the design and evaluation of vehicle safety. However, discrepancies between CAE model predictions and actual test results pose significant challenges. This is where Machine Learning (ML) steps in, offering a promising solution to enhance the accuracy of CAE models by fusing them with real-world crash test data.
+A crucial component of automotive engineering is vehicle crashworthiness, which focuses on a vehicle's structural capacity to control crash energy and shield occupants from harm in the event of an incident. Physical crash testing are a major component of traditional crashworthiness evaluation techniques, and they are costly and time-consuming. Computer-Aided Engineering (CAE) has emerged as a key component in the design and assessment of vehicle safety with the development of sophisticated simulation tools. Disparities between the actual test results and the predictions of the CAE model, however, present serious difficulties. By combining them with actual crash test data, Machine Learning (ML) presents a viable way to improve the accuracy of CAE models in this situation.
 
 ![Vehicle Crashworthiness](_pages\images\Vehicle_Crashworthiness.png "Machine learning enabled fusion of CAE data and test data for vehicle crashworthiness performance evaluation by analysis")
 
@@ -28,7 +28,7 @@ Vehicle crashworthiness is a critical aspect of automotive engineering, focusing
 
 Motivation: Why This Matters
 ======
-The importance of addressing the gap between CAE predictions and real-world crash test results cannot be overstated. Ensuring occupant safety while reducing development costs is a key driver behind this research. Machine Learning models can handle the nonlinearity and missing physics in CAE models, thereby minimizing the reliance on costly physical crash tests. This not only accelerates the certification process but also enhances the robustness of vehicle safety designs.
+Addressing the gap between CAE predictions and real-world crash test results is crucial for ensuring occupant safety while reducing development costs. Machine Learning models can handle the nonlinearity and missing physics in CAE models, thereby minimizing the reliance on costly physical crash tests. This not only accelerates the certification process but also enhances the robustness of vehicle safety designs.
 
 
 
@@ -48,7 +48,7 @@ Why is this Problem Important?
 Challenges: The Roadblocks to Accuracy*
 ======
 **Economic Barriers:**
-Physical crash tests are expensive and res*ource-intensive, making them a significant barrier in the development process.
+Physical crash tests are expensive and resource-intensive, making them a significant barrier in the development process.
 
 **Data Availability:**
 Limited real-world crash test data is available for training machine learning models, which can affect the accuracy and reliability of these models.
@@ -224,7 +224,7 @@ Results: The Numbers Speak Louder
 
 ***Time-Domain Approach: The Power of Prediction***
 -----
-The Multi-Fidelity TCN demonstrated substantial improvements in prediction accuracy over the Low-Fidelity TCN and raw CAE predictions. Transfer learning effectively incorporated test data, enhancing the model's ability to align with real-world observations.
+The Multi-Fidelity TCN demonstrated substantial improvements in prediction accuracy over the Low-Fidelity TCN and raw CAE predictions. Transfer learning effectively incorporated test data, enhancing the model's ability to align with real-world observations [1].
 
 
 
@@ -255,7 +255,7 @@ The Multi-Fidelity TCN demonstrated substantial improvements in prediction accur
 
 ***Displacement-Domain Approach: The Precision of Probabilistic Predictions***
 -----
-The GPR captured unmodeled physics, leading to enhanced predictions. Additionally, the model quantified prediction uncertainties using Monte Carlo simulations, providing a probabilistic assessment of crashworthiness.
+The GPR captured unmodeled physics, leading to enhanced predictions. Additionally, the model quantified prediction uncertainties using Monte Carlo simulations, providing a probabilistic assessment of crashworthiness [1].
 
 
 **Quantitative Results: The Hard Numbers**
@@ -358,8 +358,5 @@ References
 
 1. Zeng, J., Li, G., Gao, Z., Li, Y., Sundararajan, S., Barbat, S., & Hu, Z. (2023). Machine learning enabled fusion of CAE data and test data for vehicle crashworthiness performance evaluation by analysis. Structural and Multidisciplinary Optimization, 66(1), 96. https://doi.org/10.1007/s00158-023-03553-5
 
-2. Lea C, Vidal R, Reiter A, Hager GD (2016) Temporal convolutional 
-networks: a unified approach to action segmentation. In: Com
-puter vision—ECCV 2016 workshops, proceedings, Part III 14, 
-2016, Amsterdam, The Netherlands, 8–10 and 15–16 October 2016. Springer, pp 47–54.
+
 
