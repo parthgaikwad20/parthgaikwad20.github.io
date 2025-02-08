@@ -45,7 +45,7 @@ Why is this Problem Important?
 
 
 
-Challenges: The Roadblocks to Accuracy*
+Challenges: The Roadblocks to Accuracy
 ======
 **Economic Barriers:**
 Physical crash tests are expensive and resource-intensive, making them a significant barrier in the development process.
